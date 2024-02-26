@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&display=swap');
+:root {
+    --main-color: #312a4e;
+    --sec-color: #d42a2a;
+    --transition: .5s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+    border-radius: 10px;
+  }
+
+.banner {
+    background-image: url(../img/bgg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    height:100vh;
+
+}
+.navbar-brand {
+    height: 40px;
+    width: 40px;
+    margin-left: 10vw;
+} 
+
+
+
+nav{
+    background-color:var(--main-color);
+   
+}
+.navbar 
+{
+    width:70%;
+    top:50px;
+}
+
+
+.nav-link {
+   
+    transition: var(--transition);
+    top:0px;
+}
+
+.nav-link:hover {
+    color: var(--sec-color) !important;
+    margin-top: -5px;
+
+}
+.navbar-brand
+{
+    color: var(--main-color) !important;
+}
+ .active
+{
+    color: var(--sec-color) !important;
+}
+
+
+
+footer span {
+    color: var(--sec-color);
+}
+
+
+
+footer {
+    top: 20px;
+    transform: translateX(0%, 20%);
+}
+
+#to-top {
+    border-radius: 50%;
+    background-color: var(--sec-color);
+    color:aliceblue;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border:1px solid var(--sec-color);
+    animation:  topp 1s infinite alternate;
+    margin-left:78rem;
+    margin-bottom: 2rem;
+    align-items: center;
+
+
+}
+#isLoading{
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+@keyframes topp{
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+}
+
+
+  .Movies {
+    background-color: var(--main-color);
+  }
+  .Movies span {
+    width: 2rem;
+    padding: 0 20px;
+    background-color: var(--sec-color);
+    color:antiquewhite;
+  }
+  
+ 
+  
